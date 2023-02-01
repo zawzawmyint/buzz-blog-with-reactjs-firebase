@@ -14,7 +14,7 @@ import Contact from "./pages/Contact";
 import CreatePost from "./pages/CreatePost";
 import SignOut from "./pages/SignOut";
 import Settings from "./pages/Settings";
-import authStore from "./store/AuthStore";
+import PostDetails from "./pages/PostDetails";
 
 export default function App() {
   return (
@@ -29,6 +29,7 @@ export default function App() {
         <Route path="/create-post" element={<CreatePost />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/post-details" element={<PostDetails />} />
       </Routes>
     </Router>
   );

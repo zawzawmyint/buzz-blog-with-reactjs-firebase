@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import postphoto from "../../assets/images/postphoto.jpg";
 import profile from "../../assets/images/profile.jpg";
+import { Link } from "react-router-dom";
 
 const Posts = () => {
   return (
@@ -80,14 +81,17 @@ const Posts = () => {
                   </Typography>
                 </Box>
               </Stack>
-              <Typography
-                variant="h3"
-                color="text.secondary"
-                ml={7}
-                fontWeight={"bold"}
-              >
-                Top Developer Communities to Join in 2023
-              </Typography>
+              <Link to={"/post-details"}>
+                <Typography
+                  variant="h3"
+                  color="text.secondary"
+                  ml={7}
+                  fontWeight={"bold"}
+                  className=" hover:text-indigo-600"
+                >
+                  Top Developer Communities to Join in 2023
+                </Typography>
+              </Link>
             </CardContent>
             <CardActions>
               <Stack direction="row" spacing={40} ml={7}>

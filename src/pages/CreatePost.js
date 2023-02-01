@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import authStore from "../store/AuthStore";
 import {
   Box,
@@ -51,6 +51,7 @@ const CreatePost = () => {
 
   const handleClose = () => {
     setOpen(false);
+    navigate("/");
   };
 
   const onEditorStateChange = (editorState) => {
@@ -255,21 +256,23 @@ const CreatePost = () => {
                 />
               </Stack>
             </Item>
-            <Button
-              variant="contained"
-              color="warning"
-              sx={{
-                width: "100px",
-                textTransform: "capitalize",
-                color: "white",
-                borderColor: "gray",
-                marginTop: "5px",
-                marginBottom: "20px",
-                marginRight: "10px",
-              }}
-            >
-              Publish
-            </Button>
+            <Link to={"/"}>
+              <Button
+                variant="contained"
+                color="warning"
+                sx={{
+                  width: "100px",
+                  textTransform: "capitalize",
+                  color: "white",
+                  borderColor: "gray",
+                  marginTop: "5px",
+                  marginBottom: "20px",
+                  marginRight: "10px",
+                }}
+              >
+                Publish
+              </Button>
+            </Link>
             <Button
               variant="outlined"
               color="warning"

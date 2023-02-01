@@ -19,13 +19,13 @@ const Login = () => {
     });
   };
 
-  const signInWithGithub = () => {
-    signInWithPopup(auth, githubProvier).then((result) => {
-      localStorage.setItem("isAuth", true);
-      setIsAuth(true);
-      navigate("/");
-    });
-  };
+  // const signInWithGithub = () => {
+  //   signInWithPopup(auth, githubProvier).then((result) => {
+  //     localStorage.setItem("isAuth", true);
+  //     setIsAuth(true);
+  //     navigate("/");
+  //   });
+  // };
   return (
     <Box mb={0} sx={{ backgroundColor: "black", minHeight: "600px" }}>
       <Container
@@ -69,7 +69,7 @@ const Login = () => {
             Continue with Google
           </Button>
         </Box>
-        <Box>
+        {/* <Box>
           <Button
             disabled
             variant="contained"
@@ -89,7 +89,7 @@ const Login = () => {
           >
             <GitHubIcon sx={{ marginRight: "5px" }} /> Continue with Github
           </Button>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   );
