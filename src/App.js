@@ -15,6 +15,8 @@ import CreatePost from "./pages/CreatePost";
 import SignOut from "./pages/SignOut";
 import Settings from "./pages/Settings";
 import PostDetails from "./pages/PostDetails";
+import Profile from "./pages/Profile";
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -30,7 +32,10 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/post-details" element={<PostDetails />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

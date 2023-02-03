@@ -123,13 +123,15 @@ const Header = () => {
                     borderRadius: "10px",
                   }}
                 >
-                  <Typography
-                    variant="subtitle1"
-                    sx={{ color: "whitesmoke" }}
-                    className=" hover:underline"
-                  >
-                    Flez
-                  </Typography>
+                  <Link to={"/profile"}>
+                    <Typography
+                      variant="subtitle1"
+                      sx={{ color: "whitesmoke" }}
+                      className=" hover:underline"
+                    >
+                      Flez
+                    </Typography>
+                  </Link>
                   <Typography
                     variant="caption"
                     sx={{ color: "whitesmoke" }}

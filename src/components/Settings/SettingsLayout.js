@@ -5,13 +5,12 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+import ParkIcon from "@mui/icons-material/Park";
+import TagFacesIcon from "@mui/icons-material/TagFaces";
 import { Link } from "react-router-dom";
 import { Divider } from "@mui/material";
 
-export default function Layout() {
+export default function SettingsLayout() {
   return (
     <Box
       sx={{
@@ -28,9 +27,9 @@ export default function Layout() {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  <HomeIcon sx={{ color: "orange" }} />
+                  <TagFacesIcon sx={{ color: "orange" }} />
                 </ListItemIcon>
-                <ListItemText className=" hover:underline" primary="Home" />
+                <ListItemText className=" hover:underline" primary="Profile" />
               </ListItemButton>
             </ListItem>
           </Link>
@@ -39,15 +38,15 @@ export default function Layout() {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  <InfoIcon sx={{ color: "orange" }} />
+                  <ParkIcon sx={{ color: "orange" }} />
                 </ListItemIcon>
 
-                <ListItemText className=" hover:underline" primary="About" />
+                <ListItemText className=" hover:underline" primary="Account" />
               </ListItemButton>
             </ListItem>
           </Link>
           {/* <Divider color="gray" sx={{ opacity: "0.6" }} /> */}
-          <Link to={"/contact"}>
+          {/* <Link to={"/contact"}>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -56,7 +55,7 @@ export default function Layout() {
                 <ListItemText className=" hover:underline" primary="Contact" />
               </ListItemButton>
             </ListItem>
-          </Link>
+          </Link> */}
           {/* <Divider color="gray" sx={{ opacity: "0.6" }} /> */}
         </List>
       </nav>

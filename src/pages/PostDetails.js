@@ -262,8 +262,11 @@ const PostDtails = () => {
                 Zaw Zaw Myint
               </Typography>
 
-              <Button variant="contained" sx={{ width: "100%" }}>
-                Follow
+              <Button
+                variant="contained"
+                sx={{ width: "100%", textTransform: "capitalize" }}
+              >
+                Edit Profile
               </Button>
 
               <Typography variant="body2">
