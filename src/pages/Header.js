@@ -47,6 +47,8 @@ const Header = () => {
         padding: "15px",
         color: "white",
         opacity: "0.9",
+        // position: "fixed",
+        // marginTop: "10px",
       }}
     >
       <Stack direction="row" spacing={2}>
@@ -55,7 +57,7 @@ const Header = () => {
             className="border-2 rounded-lg p-1"
             sx={{ fontWeight: "bold" }}
           >
-            Buzz Now
+            Buzz
           </Typography>
         </Link>
         <TextField
@@ -81,20 +83,23 @@ const Header = () => {
         <Stack direction="row" spacing={2}>
           <Link to={"/create-post"}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="warning"
               size="medium"
               sx={{
                 textTransform: "capitalize",
+                fontWeight: "bold",
               }}
               className="hover:underline"
             >
               Create Post
             </Button>
           </Link>
-          <IconButton sx={{ color: "white" }}>
-            <NotificationsNoneIcon />
-          </IconButton>
+          <Link to={"/notifications"}>
+            <IconButton sx={{ color: "white" }}>
+              <NotificationsNoneIcon />
+            </IconButton>
+          </Link>
           <Box>
             <img
               src={profile}

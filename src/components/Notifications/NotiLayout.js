@@ -10,7 +10,7 @@ import TagFacesIcon from "@mui/icons-material/TagFaces";
 import { Link } from "react-router-dom";
 import { Divider } from "@mui/material";
 
-export default function SettingsLayout() {
+export default function NotiLayout() {
   return (
     <Box
       sx={{
@@ -23,25 +23,25 @@ export default function SettingsLayout() {
     >
       <nav aria-label="main mailbox folders">
         <List>
-          <Link to={"/settings"}>
+          <Link to={"/notifications"}>
             <ListItem disablePadding>
               <ListItemButton>
-                <ListItemIcon>
-                  <TagFacesIcon sx={{ color: "orange" }} />
-                </ListItemIcon>
-                <ListItemText className=" hover:underline" primary="Profile" />
+                <ListItemText className=" hover:underline" primary="All" />
               </ListItemButton>
             </ListItem>
           </Link>
           {/* <Divider color="gray" sx={{ opacity: "0.6" }} /> */}
-          <Link to={"/about"}>
+          <Link to={"/notifications"}>
             <ListItem disablePadding>
               <ListItemButton>
-                <ListItemIcon>
-                  <ParkIcon sx={{ color: "orange" }} />
-                </ListItemIcon>
-
-                <ListItemText className=" hover:underline" primary="Account" />
+                <ListItemText className=" hover:underline" primary="Commants" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to={"/notifications"}>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemText className=" hover:underline" primary="Posts" />
               </ListItemButton>
             </ListItem>
           </Link>
