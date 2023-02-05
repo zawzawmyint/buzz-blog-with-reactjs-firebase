@@ -13,6 +13,7 @@ import { Editor } from "react-draft-wysiwyg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CommentIcon from "@mui/icons-material/Comment";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
+import { Link } from "react-router-dom";
 const PostDtails = () => {
   const [editorState, setEditorState] = React.useState("");
 
@@ -261,13 +262,14 @@ const PostDtails = () => {
               >
                 Zaw Zaw Myint
               </Typography>
-
-              <Button
-                variant="contained"
-                sx={{ width: "100%", textTransform: "capitalize" }}
-              >
-                Edit Profile
-              </Button>
+              <Link to={"/settings"}>
+                <Button
+                  variant="contained"
+                  sx={{ width: "100%", textTransform: "capitalize" }}
+                >
+                  Edit Profile
+                </Button>
+              </Link>
 
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio

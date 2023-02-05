@@ -18,6 +18,7 @@ import PostDetails from "./pages/PostDetails";
 import Profile from "./pages/Profile";
 import Footer from "./pages/Footer";
 import Notifications from "./pages/Notifications";
+import Account from "./components/Settings/Account";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
       <Footer />
     </Router>

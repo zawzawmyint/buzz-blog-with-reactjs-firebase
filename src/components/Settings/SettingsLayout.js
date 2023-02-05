@@ -34,7 +34,7 @@ export default function SettingsLayout() {
             </ListItem>
           </Link>
           {/* <Divider color="gray" sx={{ opacity: "0.6" }} /> */}
-          <Link to={"/about"}>
+          <Link to={"/account"}>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
